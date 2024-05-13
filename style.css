@@ -143,11 +143,28 @@ body {
 button {
   font-style: var(--BAS-Green);
   font-family: "freight-macro-pro", serif;
-  font-weight: 600;
+  font-weight: 400;
   font-style: normal;
   font-size: x-large;
+  color: #284a36;
   border-style: none;
+  background-color: #ffffff;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #284a36;
+  transition-duration: 0.1s;
+}
+
+button:hover {
   background-color: #eac06b;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #eac06b;
+}
+
+.newsletter {
+  text-align: center;
+  padding: 20px;
 }
 
 .newsletter_label {
@@ -167,6 +184,11 @@ footer {
   display: flex;
   margin-top: 100px;
   place-content: space-between;
+  background-color: #284a36;
+}
+
+.footer_text {
+  color: #f2f0e6;
 }
 
 .right_footer {
@@ -223,13 +245,13 @@ nav {
 .winelist {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  align-items: center;
+  text-align: center;
 }
 
 .winelistbox {
   display: block;
   margin: 40px;
-  align-items: center;
+  place-self: center;
 }
 
 .menu {
@@ -285,16 +307,6 @@ nav {
     align-items: center;
   }
 
-  button {
-    font-style: var(--BAS-Green);
-    font-family: "freight-macro-pro", serif;
-    font-weight: 200;
-    font-style: normal;
-    font-size: large;
-    border-style: none;
-    background-color: #eac06b;
-  }
-
   .winelistbox {
     display: block;
     margin: 30px;
@@ -331,8 +343,10 @@ nav {
     left: 0;
     bottom: 0;
     width: 100%;
-    display: inline;
-    margin: 200px;
+    display: flex;
+    margin-top: 100px;
+    place-content: space-between;
+    background-color: #284a36;
   }
 
   .imageBox {
@@ -358,16 +372,8 @@ nav {
   }
   .winelistbox {
     margin: 20px;
-  }
-
-  button {
-    font-style: var(--BAS-Green);
-    font-family: "freight-macro-pro", serif;
-    font-weight: 200;
-    font-style: normal;
-    font-size: large;
-    border-style: none;
-    background-color: #eac06b;
+    margin-bottom: 100px;
+    text-align: center;
   }
 
   footer {
@@ -376,8 +382,10 @@ nav {
     left: 0;
     bottom: 0;
     width: 100%;
-    display: inline;
-    margin: 200px;
+    display: flex;
+    margin-top: 100px;
+    place-content: space-between;
+    background-color: #284a36;
   }
 
   .imageBox {
