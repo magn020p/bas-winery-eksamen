@@ -338,8 +338,8 @@ nav {
   header {
     display: flex;
     justify-content: space-between;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
     margin-bottom: 50px;
   }
 
@@ -389,6 +389,10 @@ nav {
 }
 
 @media screen and (max-width: 700px) {
+  main {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
   .winelist {
     display: inline-block;
     margin: 20px;
@@ -409,6 +413,10 @@ nav {
     margin-top: 100px;
     place-content: space-between;
     background-color: #284a36;
+  }
+
+  .right_footer {
+    display: block;
   }
 
   .imageBox {
