@@ -389,10 +389,6 @@ nav {
 }
 
 @media screen and (max-width: 700px) {
-  main {
-    margin-right: 20px;
-    margin-left: 20px;
-  }
   .winelist {
     display: inline-block;
     margin: 20px;
