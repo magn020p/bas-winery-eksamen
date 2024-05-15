@@ -1,5 +1,8 @@
 * {
   box-sizing: border-box;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 0;
 }
 /* .carousel {
   position: relative;
@@ -29,8 +32,13 @@
 }
 
 main {
-  margin: 20px;
+  margin-right: 40px;
+  margin-left: 40px;
   position: relative;
+}
+
+.about_site {
+  width: 100%;
 }
 
 em {
@@ -84,6 +92,7 @@ li {
   color: var(--BAS-Green);
   text-decoration: none;
   list-style-type: none;
+  margin-bottom: 20px;
 }
 h1 {
   font-family: "freight-macro-pro", serif;
@@ -164,9 +173,14 @@ button:hover {
   border-color: #eac06b;
 }
 
-.newsletter {
+.newsletter_index {
   text-align: center;
   padding: 20px;
+}
+
+.newsletter_winery {
+  font-size: larger;
+  padding-top: 20px;
 }
 
 .newsletter_label {
@@ -191,10 +205,12 @@ footer {
 
 .footer_text {
   color: #f2f0e6;
+  margin: 12px;
 }
 
 .right_footer {
-  vertical-align: bottom;
+  display: inline-block;
+  align-self: flex-end;
 }
 
 .splash_slide {
@@ -223,8 +239,8 @@ footer {
 header {
   display: flex;
   justify-content: space-between;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 40px;
+  padding-left: 40px;
   margin-bottom: 50px;
 }
 
@@ -432,7 +448,7 @@ nav {
 
   nav.active .menu {
     display: block;
-    background-color: #fff;
+    background-color: var(--BAS-Green);
     position: absolute;
     top: 100px;
     left: 0;
@@ -442,9 +458,15 @@ nav {
 
   nav.active .menu li {
     margin: 10px 20px;
+    color: var(--BAS-Off-White);
+  }
+
+  nav.active h1 {
+    color: var(--BAS-Off-White);
   }
 
   nav.active .menu a {
     font-size: 24px;
+    color: var(--BAS-Off-White);
   }
 }
