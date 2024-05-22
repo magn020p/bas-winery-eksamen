@@ -10,21 +10,23 @@
   </head>
   <header>
     <div class="logo">
-      <a href="index.html">BAS</a>
+      <a href="index.html"
+        ><img src="public/Asset 1.svg" alt="BAS winery logo"
+      /></a>
     </div>
     <nav>
       <ul class="menu">
         <li>
-          <a href="winery.html" id="winery"><h1>WINERY</h1></a>
+          <a href="winery.html" id="winery">WINERY</a>
         </li>
         <li>
-          <a href="wines.html" id="wines"><h1>WINES</h1></a>
+          <a href="wines.html" id="wines">WINES</a>
         </li>
         <li>
-          <a href="about.html" id="about"><h1>ABOUT</h1></a>
+          <a href="about.html" id="about">ABOUT</a>
         </li>
         <li>
-          <a href="contact.html" id="contact"><h1>CONTACT</h1></a>
+          <a href="contact.html" id="contact">CONTACT</a>
         </li>
       </ul>
 
@@ -38,44 +40,37 @@
 
   <body>
     <main>
+      <div><h1>ABOUT BAS WINERY</h1></div>
       <div>
         <div class="grid_2-1">
           <div>
-            <h2>
+            <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
               accusantium molestias, enim fugit omnis architecto impedit quis
               porro, iusto ex voluptas minima vitae saepe maiores cum debitis
               ipsa consequatur repellat?
-            </h2>
+            </p>
             <img
               class="about_site"
               src="public/IMG_5703.jpeg"
               alt="BAS Winery farmhouse"
             />
           </div>
-          <div>
+          <div class="col_2">
             <img
               class="about_site"
               src="public/jørgen_portræt.jpg"
               alt="Grapewines"
             />
-            <h3>
+            <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt
               atque vitae temporibus nobis ea laborum voluptatum est excepturi
               assumenda exercitationem! Sit possimus temporibus repellat libero
               pariatur amet dolorum, maiores nobis.
-            </h3>
+            </p>
           </div>
         </div>
       </div>
-
-      <script src="script.js"></script>
-      <script src="menu.js"></script>
-      <script>
-        document.getElementById("about").style.textDecoration = "underline";
-        document.getElementById("about").style.textDecorationThickness =
-          "1.5px";
-      </script>
     </main>
     <footer>
       <div>
@@ -87,9 +82,15 @@
       </div>
       <div class="right_footer">
         <div>
-          <h3 class="footer_text">SE FØDEVARESTYRELSENS SMILEY RAPPORT</h3>
+          <p class="footer_text">SE FØDEVARESTYRELSENS SMILEY RAPPORT</p>
         </div>
       </div>
     </footer>
+    <script src="script.js"></script>
+    <script src="menu.js"></script>
+    <script>
+      document.getElementById("about").style.textDecoration = "underline";
+      document.getElementById("about").style.textDecorationThickness = "1.5px";
+    </script>
   </body>
 </html>

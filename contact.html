@@ -10,21 +10,23 @@
   </head>
   <header>
     <div class="logo">
-      <a href="index.html">BAS</a>
+      <a href="index.html"
+        ><img src="public/Asset 1.svg" alt="BAS winery logo"
+      /></a>
     </div>
     <nav>
       <ul class="menu">
         <li>
-          <a href="winery.html" id="winery"><h1>WINERY</h1></a>
+          <a href="winery.html" id="winery">WINERY</a>
         </li>
         <li>
-          <a href="wines.html" id="wines"><h1>WINES</h1></a>
+          <a href="wines.html" id="wines">WINES</a>
         </li>
         <li>
-          <a href="about.html" id="about"><h1>ABOUT</h1></a>
+          <a href="about.html" id="about">ABOUT</a>
         </li>
         <li>
-          <a href="contact.html" id="contact"><h1>CONTACT</h1></a>
+          <a href="contact.html" id="contact">CONTACT</a>
         </li>
       </ul>
 
@@ -38,61 +40,56 @@
 
   <body>
     <main>
+      <div><h1>CONTACT US</h1></div>
       <div class="grid_2-1">
         <div class="h1_text">
           <div>
-            <h2>
+            <p>
               For any enquiries other than ordering wine, please email
               <a href="mailto: info@baswinery.dk"> info@baswinery.dk </a> or
               call us at (+45) 5151 9958
-            </h2>
+            </p>
           </div>
 
           <div class="newsletter">
-            <h2>
+            <p>
               Subscribe to our newsletter for latest news on our wine
               production:
-            </h2>
+            </p>
             <form action="">
               <label for="newsletter-email" class="newsletter_label"
-                >Enter your e-mail:</label
+                ><h3>Enter your e-mail:</h3></label
               >
-              <br />
+
               <input
                 type="newsletter email"
                 id="newsletter-email"
                 placeholder="Your E-mail"
               />
               <br />
-              <button type="submit">Sign Up</button>
+              <div class="newsletter_button">
+                <button type="submit">Sign Up</button>
+              </div>
             </form>
           </div>
         </div>
         <div class="locations">
           <div>
-            <h1>BAS WINERY</h1>
-            <h2>CVR. 4398 6902</h2>
+            <h2>BAS WINERY</h2>
+            <h3>CVR. 4398 6902</h3>
           </div>
           <br />
           <div>
-            <h1>ADMINISTRATION</h1>
-            <h2>Bjørnsmosevej 6, 2500 Valby Denmark</h2>
+            <h2>ADMINISTRATION</h2>
+            <h3>Bjørnsmosevej 6, 2500 Valby Denmark</h3>
           </div>
           <br />
           <div>
-            <h1>PRODUCTION</h1>
-            <h2>Basnæsevej 22, 4780 Stege Denmark</h2>
+            <h2>PRODUCTION</h2>
+            <h3>Basnæsevej 22, 4780 Stege Denmark</h3>
           </div>
         </div>
       </div>
-
-      <script src="script.js"></script>
-      <script src="menu.js"></script>
-      <script>
-        document.getElementById("contact").style.textDecoration = "underline";
-        document.getElementById("contact").style.textDecorationThickness =
-          "1.5px";
-      </script>
     </main>
     <footer>
       <div>
@@ -104,9 +101,16 @@
       </div>
       <div class="right_footer">
         <div>
-          <h3 class="footer_text">SE FØDEVARESTYRELSENS SMILEY RAPPORT</h3>
+          <p class="footer_text">SE FØDEVARESTYRELSENS SMILEY RAPPORT</p>
         </div>
       </div>
     </footer>
+    <script src="script.js"></script>
+    <script src="menu.js"></script>
+    <script>
+      document.getElementById("contact").style.textDecoration = "underline";
+      document.getElementById("contact").style.textDecorationThickness =
+        "1.5px";
+    </script>
   </body>
 </html>

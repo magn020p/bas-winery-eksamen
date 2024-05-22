@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="40.59mm" height="44.43mm" viewBox="0 0 115.07 125.95">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: FreightMacroProSemibold-Regular, 'FreightMacro Pro';
+        font-size: 64px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #284a36;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        fill: #eac06a;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <text class="cls-1" transform="translate(0 52)"><tspan x="0" y="0">BAS</tspan></text>
+    <circle class="cls-2" cx="38.24" cy="76.45" r="16.5"/>
+    <circle class="cls-3" cx="75.96" cy="76.45" r="16.5"/>
+    <circle class="cls-2" cx="57.24" cy="109.45" r="16.5"/>
+  </g>
+</svg>

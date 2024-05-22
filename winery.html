@@ -10,21 +10,23 @@
   </head>
   <header>
     <div class="logo">
-      <a href="index.html">BAS</a>
+      <a href="index.html"
+        ><img src="public/Asset 1.svg" alt="BAS winery logo"
+      /></a>
     </div>
     <nav>
       <ul class="menu">
         <li>
-          <a href="winery.html" id="winery"><h1>WINERY</h1></a>
+          <a href="winery.html" id="winery">WINERY</a>
         </li>
         <li>
-          <a href="wines.html" id="wines"><h1>WINES</h1></a>
+          <a href="wines.html" id="wines">WINES</a>
         </li>
         <li>
-          <a href="about.html" id="about"><h1>ABOUT</h1></a>
+          <a href="about.html" id="about">ABOUT</a>
         </li>
         <li>
-          <a href="contact.html" id="contact"><h1>CONTACT</h1></a>
+          <a href="contact.html" id="contact">CONTACT</a>
         </li>
       </ul>
 
@@ -38,67 +40,76 @@
 
   <body>
     <main>
+      <div><h1>OUR WINERY</h1></div>
       <div class="grid_2-1">
         <div class="col_1">
           <div>
-            <h2>We make wine with personality.</h2>
-            <h2>
+            <h2>We make quality wine with personality.</h2>
+            <p>
               Passion for winemaking drives everything we do. We are not limited
               by conventional wisdom, but taste what nature offer and let the
               flavours and our curiosity lead the way. We want to push the norm
               and “walk the extra mile” to create quality wine that challenge
               you and your taste buds.
-            </h2>
-            <h2>Enjoy!</h2>
+            </p>
+            <p>Enjoy!</p>
           </div>
           <div>
-            <img
-              class="field"
-              src="/public/IMG_5698.jpeg"
-              alt="Placeholder Picture"
-            />
+            <img class="mySlides" src="public/IMG_5697.jpeg" />
+            <img class="mySlides" src="public/IMG_5698.jpeg" />
+            <img class="mySlides" src="public/IMG_5699.jpeg" />
+          </div>
+          <div class="slideshow_buttons">
+            <button class="w3-button w3-display-left" onclick="plusDivs(-1)">
+              &#10094;
+            </button>
+            <button class="w3-button w3-display-right" onclick="plusDivs(+1)">
+              &#10095;
+            </button>
           </div>
         </div>
         <div class="col_2">
-          <h2>
+          <p>
             All our wines are made from hand-picked organic grapes, or other
             fruits, using simple ancestral vinification methods.
-          </h2>
-          <h2>
+          </p>
+          <p>
             Our wines are made with passion and curiosity questioning the
             conventions in the search for new and different taste experiences.
             We farm our own grapes and fruit but, also buy from other organic
             farmers to experiment with alternative combinations, playing on the
             strength of local grapes and fruit varieties.
-          </h2>
-          <h2>
+          </p>
+          <p>
             We taste and patiently follow the flavours we find intriguing. We
             produce natural wine with as little intervention as possible.
-          </h2>
-          <h2>
+          </p>
+          <p>
             We try never to repeat ourselves. Each year is different, natures
             change is helping us to remain curious and open to new
             possibilities. Each wine is unique and requires different attention
             and patience. The result is a living wine, wholesome and full of
             naturally occurring microbiology.
-          </h2>
+          </p>
           <div class="newsletter_winery">
-            <h2>
+            <p>
               Subscribe to our newsletter for latest news on our wine
               production:
-            </h2>
+            </p>
             <form action="">
               <label for="newsletter-email" class="newsletter_label"
-                >Enter your e-mail:</label
+                ><p>Enter your e-mail:</p></label
               >
-              <br />
+
               <input
                 type="newsletter email"
                 id="newsletter-email"
                 placeholder="Your E-mail"
               />
               <br />
-              <button type="submit">Sign Up</button>
+              <div class="newsletter_button">
+                <button type="submit">Sign Up</button>
+              </div>
             </form>
           </div>
           <!-- <h1>COLLABORATION</h1>
@@ -111,14 +122,6 @@
           <li><h2>Bodegas Proexa</h2></li> -->
         </div>
       </div>
-
-      <script src="script.js"></script>
-      <script src="menu.js"></script>
-      <script>
-        document.getElementById("winery").style.textDecoration = "underline";
-        document.getElementById("winery").style.textDecorationThickness =
-          "1.5px";
-      </script>
     </main>
     <footer>
       <div>
@@ -130,9 +133,36 @@
       </div>
       <div class="right_footer">
         <div>
-          <h3 class="footer_text">SE FØDEVARESTYRELSENS SMILEY RAPPORT</h3>
+          <p class="footer_text">SE FØDEVARESTYRELSENS SMILEY RAPPORT</p>
         </div>
       </div>
     </footer>
+    <script src="script.js"></script>
+    <script src="menu.js"></script>
+    <script>
+      document.getElementById("winery").style.textDecoration = "underline";
+      document.getElementById("winery").style.textDecorationThickness = "1.5px";
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+        showDivs((slideIndex += n));
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = x.length;
+        }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+      }
+    </script>
   </body>
 </html>

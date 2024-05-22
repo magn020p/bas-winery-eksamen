@@ -10,21 +10,23 @@
   </head>
   <header>
     <div class="logo">
-      <a href="index.html">BAS</a>
+      <a href="index.html"
+        ><img src="public/Asset 1.svg" alt="BAS winery logo"
+      /></a>
     </div>
     <nav>
       <ul class="menu">
         <li>
-          <a href="winery.html" id="winery"><h1>WINERY</h1></a>
+          <a href="winery.html" id="winery">WINERY</a>
         </li>
         <li>
-          <a href="wines.html" id="wines"><h1>WINES</h1></a>
+          <a href="wines.html" id="wines">WINES</a>
         </li>
         <li>
-          <a href="about.html" id="about"><h1>ABOUT</h1></a>
+          <a href="about.html" id="about">ABOUT</a>
         </li>
         <li>
-          <a href="contact.html" id="contact"><h1>CONTACT</h1></a>
+          <a href="contact.html" id="contact">CONTACT</a>
         </li>
       </ul>
       <div class="burger">
@@ -36,25 +38,26 @@
   </header>
 
   <body>
+    <!-- <h1>BAS WINERY</h1> -->
     <div>
       <img class="forside_billede" src="/public/2.jpeg" alt="Wine bottles" />
     </div>
     <div class="newsletter_index">
-      <h2>
-        Subscribe to our newsletter for latest news on our wine production:
-      </h2>
+      <p>Subscribe to our newsletter for latest news on our wine production:</p>
       <form action="">
         <label for="newsletter-email" class="newsletter_label"
-          >Enter your e-mail:</label
+          ><p>Enter your e-mail:</p></label
         >
-        <br />
+
         <input
           type="newsletter email"
           id="newsletter-email"
           placeholder="Your E-mail"
         />
         <br />
-        <button type="submit">Sign Up</button>
+        <div class="newsletter_button">
+          <button type="submit">Sign Up</button>
+        </div>
       </form>
     </div>
     <!-- <div class="carousel">
@@ -88,10 +91,7 @@
         alt="Picture of grapes"
       />
     </div> -->
-    <main>
-      <script src="script.js"></script>
-      <script src="menu.js"></script>
-    </main>
+    <main></main>
     <footer>
       <div>
         <div>
@@ -102,9 +102,11 @@
       </div>
       <div class="right_footer">
         <div>
-          <h3 class="footer_text">SE FØDEVARESTYRELSENS SMILEY RAPPORT</h3>
+          <p class="footer_text">SE FØDEVARESTYRELSENS SMILEY RAPPORT</p>
         </div>
       </div>
     </footer>
+    <script src="script.js"></script>
+    <script src="menu.js"></script>
   </body>
 </html>
