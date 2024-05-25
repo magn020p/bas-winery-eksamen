@@ -26,6 +26,11 @@
   }
 } */
 
+.background-video {
+  align-items: center;
+  width: 100%;
+}
+
 .mySlides {
   width: 100%;
 }
@@ -74,7 +79,7 @@ em {
   .grid_2-1 {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    column-gap: 100px;
+    column-gap: 80px;
   }
   /* .col_1 {
   } */
@@ -88,7 +93,7 @@ em {
   --BAS-Green: #284a36;
   --BAS-Off-White: #f2f0e6;
   --background-color-2: #ffffff;
-  --alt-color: #eac06b;
+  --button-color: #eac06b;
 }
 
 input {
@@ -97,7 +102,7 @@ input {
   font-weight: 400;
   font-style: normal;
   font-size: large;
-  color: #284a36;
+  color: var(--BAS-Green);
   border-style: none;
   background-color: #ffffff;
   border-style: solid;
@@ -186,9 +191,9 @@ button {
   font-weight: 400;
   font-style: normal;
   font-size: x-large;
-  color: #284a36;
+  color: var(--BAS-Green);
   border-style: none;
-  background-color: #ffffff;
+  background-color: var(--background-color-2);
   border-style: solid;
   border-width: 1.5px;
   border-color: #284a36;
@@ -198,10 +203,10 @@ button {
 }
 
 button:hover {
-  background-color: #eac06b;
+  background-color: var(--button-color);
   border-style: solid;
   border-width: 1.5px;
-  border-color: #eac06b;
+  border-color: var(--button-color);
 }
 
 .newsletter_index {
@@ -236,7 +241,7 @@ footer {
   display: flex;
   margin-top: 100px;
   place-content: space-between;
-  background-color: #284a36;
+  background-color: var(--BAS-Green);
 }
 
 footer p {
@@ -254,7 +259,7 @@ footer h3 {
 }
 
 .footer_text {
-  color: #f2f0e6;
+  color: var(--BAS-Off-White);
   margin: 12px;
 }
 
@@ -420,7 +425,7 @@ nav {
     display: flex;
     margin-top: 100px;
     place-content: space-between;
-    background-color: #284a36;
+    background-color: var(--BAS-Green);
   }
 
   .imageBox {
@@ -459,7 +464,7 @@ nav {
     display: block;
     margin-top: 100px;
     place-content: space-between;
-    background-color: #284a36;
+    background-color: var(--BAS-Green);
   }
 
   .imageBox {
