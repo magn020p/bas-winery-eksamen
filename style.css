@@ -30,6 +30,13 @@
   text-align: center;
 }
 
+.cta h1 p {
+  font-family: "freight-macro-pro", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: x-large;
+}
+
 .background-video {
   align-items: center;
   width: 100%;
@@ -345,7 +352,7 @@ nav {
 }
 
 .menu li {
-  margin-top: 40px;
+  margin-top: 60px;
   margin-right: 20px;
 }
 
