@@ -26,6 +26,14 @@
   }
 } */
 
+.read_more {
+  margin-bottom: 20px;
+}
+
+.order_site_button {
+  margin-bottom: 40px;
+}
+
 .cta {
   text-align: center;
 }
