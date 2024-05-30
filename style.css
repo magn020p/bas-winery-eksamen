@@ -107,6 +107,25 @@ em {
     font-size: 12px;
   }
 }
+@media screen and (min-width: 980px) {
+  .forside_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 2fr;
+  }
+
+  .background-video-content {
+    grid-column: 1/4;
+    grid-row: 1/4;
+  }
+
+  .cta_box {
+    margin-top: 40px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: #f2f0e697;
+  }
+}
 
 :root {
   --BAS-Green: #284a36;
